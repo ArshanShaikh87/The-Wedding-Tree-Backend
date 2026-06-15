@@ -70,7 +70,7 @@ import { Resend } from "resend";
 
 dotenv.config();
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.re_EWsACJFc_Ep7HGXaqE8XkPJWnXGwgiBbJ);
 
 const app = express();
 const PORT = process.env.PORT || 3000;
