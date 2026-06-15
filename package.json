@@ -1,0 +1,20 @@
+{
+  "name": "the-wedding-tree-backend",
+  "version": "1.0.0",
+  "description": "Backend for The Wedding Tree - Node.js version",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "nodemailer": "^9.0.0"
+  }
+}
