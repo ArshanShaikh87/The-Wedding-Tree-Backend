@@ -25,7 +25,8 @@ app.post("/api/contact", async (req, res) => {
     // Email to YOU
     await resend.emails.send({
       from: "The Wedding Tree <onboarding@resend.dev>",
-      to: "viparsh4040@gmail.com",
+      // to: "viparsh4040@gmail.com",
+      to: "arshanshaikh200@gmail.com",
       subject: "New Contact Form Submission - The Wedding Tree",
       html: `
         <h2>New Inquiry Received</h2>
