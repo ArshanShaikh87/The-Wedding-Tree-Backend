@@ -36,20 +36,20 @@ app.post("/api/contact", async (req, res) => {
         <p><strong>Message:</strong> ${message || "No message"}</p>
       `,
     });
-
+console.log("Receiver Email:", process.env.RECEIVER_EMAIL);
     // Thank you email to USER
-    await resend.emails.send({
-      from: "The Wedding Tree <onboarding@resend.dev>",
-      to: email,
-      subject: "Thank You for Contacting The Wedding Tree",
-      html: `
-        <h2>Dear ${name},</h2>
-        <p>Thank you for reaching out to <strong>The Wedding Tree</strong>!</p>
-        <p>We have received your inquiry and will contact you soon.</p>
-        <br/>
-        <p>Warm regards,<br/>The Wedding Tree Team</p>
-      `,
-    });
+    // await resend.emails.send({
+    //   from: "The Wedding Tree <onboarding@resend.dev>",
+    //   to: email,
+    //   subject: "Thank You for Contacting The Wedding Tree",
+    //   html: `
+    //     <h2>Dear ${name},</h2>
+    //     <p>Thank you for reaching out to <strong>The Wedding Tree</strong>!</p>
+    //     <p>We have received your inquiry and will contact you soon.</p>
+    //     <br/>
+    //     <p>Warm regards,<br/>The Wedding Tree Team</p>
+    //   `,
+    // });
 
     res.status(200).json({ message: "Emails sent successfully!" });
 
